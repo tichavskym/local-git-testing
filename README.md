@@ -1,7 +1,7 @@
 # Instructions to reporoduce
 
 ```
-// 
+// Clone this repository and `cd` into it
 git clone git@github.com:tichavskym/local-git-testing.git && cd local-git-testing
 
 // Create `redis-rb` directory with a local Git dependency
