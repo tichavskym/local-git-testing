@@ -17,7 +17,7 @@ cd ../app && bundle install
 ```
 
 This will return an error. Replacing first line of `redis-rb/redis.gemspec` 
-(path from root of this repository) with the following lines (or something similar):
+(path from the root of this repository) with the following lines (or something similar):
 
 ```
 lib = File.expand_path('../lib', __FILE__)
