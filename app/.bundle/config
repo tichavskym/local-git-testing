@@ -1,3 +1,6 @@
 ---
 BUNDLE_PATH: "vendor/bundle"
 BUNDLE_FORCE_RUBY_PLATFORM: "true"
+BUNDLE_DEPLOYMENT: "true"
+BUNDLE_FROZEN: "true"
+BUNDLE_LOCAL__REDIS: "../redis-rb"
