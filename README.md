@@ -1,6 +1,9 @@
-Clone this repo, `cd` into it and run
+# Instructions to reporoduce
 
 ```
+// 
+git clone git@github.com:tichavskym/local-git-testing.git && cd local-git-testing
+
 // Create `redis-rb` directory with a local Git dependency
 // Alternatively you can use https method, it shouldn't really matter
 git clone git@github.com:3scale/redis-rb.git
@@ -13,5 +16,13 @@ cd redis-rb && git switch apisonator
 cd ../app && bundle install
 ```
 
+This will return an error. Replacing first line of `redis-rb/redis.gemspec` 
+(path from root of this repository) with the following lines (or something similar):
 
+```
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "redis/version" 
+```
 
+will make it work.
