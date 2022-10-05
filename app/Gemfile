@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gem 'redis', git: 'https://github.com/3scale/redis-rb', branch: 'apisonator'
+
